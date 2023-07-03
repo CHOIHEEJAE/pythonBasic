@@ -7,7 +7,7 @@ class Unit:
         
     def move(self, location):
         print('{0} : {1} 방향으로 이동합니다. [속도 {2}]'.format(self.name, location, self.speed))
-        
+
         # self.damage = damage
         # print("{0} 유닛이 생성되었습니다.".format(self.name))
         # print("체력 {0}, 공격력 {1}".format(self.hp, self.damage))
@@ -20,7 +20,7 @@ class AttackUnit (Unit) : # Unit class 상속
         Unit.__init__(self, name, hp) # 상속받은 class 사용
         self.damage = damage
         
-    def attack(self, location) :
+    def attack(self, location) : 
         print("{0} : {1} 방향으로 적군을 공격합니다. [공격력 : {2}]".format(self.name, location, self.damage))
 
     def damaged(self, damage):
