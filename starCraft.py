@@ -47,7 +47,8 @@ class Marine (AttackUnit) :
 # 탱크
 class Tank(AttackUnit):
     def __init__(self):
-        AttackUnit.__init__(self, "탱크", 50, 2, 20)
+        AttackUnit.__init__(self, "탱크", 150, 1, 35)
+        
 
 # 날 수 있는 기능 class
 class Flyable :
