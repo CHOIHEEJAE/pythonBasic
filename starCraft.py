@@ -20,7 +20,7 @@ class AttackUnit (Unit) : # Unit class 상속
         Unit.__init__(self, name, hp) # 상속받은 class 사용
         self.damage = damage
         
-    def attack(self, location) : 
+    def attack(self, location) :
         print("{0} : {1} 방향으로 적군을 공격합니다. [공격력 : {2}]".format(self.name, location, self.damage))
 
     def damaged(self, damage):
